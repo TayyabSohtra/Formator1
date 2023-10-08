@@ -24,8 +24,18 @@ function App() {
       setalerts(null);
     },1500)
   }
+  // const removecolor =()=>{
+  //   document.body.classList.remove('bg-light')
+  //   document.body.classList.remove('bg-dark')
+  //   document.body.classList.remove('bg-warning')
+  //   document.body.classList.remove('bg-danger')
+  //   document.body.classList.remove('bg-success')
+  //   document.body.classList.remove('bg-primary')
+  // }
   const [mode,setmode]=useState('light')//tell us whether the dark mode is enabl or not
-  const togglemode=()=>{
+  const togglemode=(cls)=>{
+    // removecolor();
+    // document.body.classList.add('bg-'+cls)
     if (mode==='light'){
       setmode('dark')
       document.body.style.background="#151B54"
@@ -55,11 +65,11 @@ function App() {
     <Alert alert={alerts}/>
     <div className="container my-3">
       <Switch>
-        <Route exact path="/Formator2">
-          <Textbox heading="Enter the text to analyze" showalerts={showalert} mode={mode}/>
+        <Route exact path="/">
+          <Textbox heading="Try Formator to Count Word, Count Characters and Remove extra space" showalerts={showalert} mode={mode}/>
         </Route>
         <Route exact path="/about">
-          <About />
+          <About Mode={mode}/>
         </Route>
       </Switch>
       </div>

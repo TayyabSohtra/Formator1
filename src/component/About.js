@@ -1,33 +1,41 @@
 import React from 'react'
 import { useState } from 'react'
 
-export default function About() {
-    const [myStyle,setMyStyle]=useState({
-        color:'black',
-        backgroundColor:'white'
-    })
+export default function About(props) {
+    // const [myStyle,setMyStyle]=useState({
+    //     color:'black',
+    //     backgroundColor:'white'
+    // })
     // let myStyle = ({
     //   color:'white',
     //   backgroundColor:'black'
     // })
-    const toggleStyle = () =>{
-      if (myStyle.color === 'white'){
-        setMyStyle({
-          color:'black',
-        backgroundColor:'white'
-        })
-        setbtnText("Enable Dark Mdoe")
-      }
-      else{
-        setMyStyle({color:'white',
-        backgroundColor:'black',
-        border:'1px solid white'
-      })
-        setbtnText("Enable Light Mode")
-      }
+    // const toggleStyle = () =>{
+    //   if (myStyle.color === 'white'){
+    //     setMyStyle({
+    //       color:'black',
+    //     backgroundColor:'white'
+    //     })
+    //     setbtnText("Enable Dark Mdoe")
+    //   }
+    //   else{
+    //     setMyStyle({color:'white',
+    //     backgroundColor:'black',
+    //     border:'1px solid white'
+    //   })
+    //     setbtnText("Enable Light Mode")
+    //   }
+
+    // }
+    // const [btnText,setbtnText] = useState("Enable Dark Mode")
+
+    const myStyle = {
+      color:props.Mode==='dark'?'white':'black',
+      backgroundColor:props.Mode==='dark'?'#151B54':'white',
+      // border: '1px solid' ,
+      // borderColor:props.Mode==='dark'?'white':'black'
 
     }
-    const [btnText,setbtnText] = useState("Enable Dark Mode")
   return (
     <div className="container" style={myStyle}>
     <h1 className='my-3'>About Us</h1>
@@ -83,9 +91,9 @@ export default function About() {
 </div>
 </div>
 </div>
-<div className='container'>
+{/* <div className='container'>
 <button className='btn btn-outline-primary my-2 mx-0' onClick={toggleStyle}>{btnText}</button>
-</div>
+</div> */}
 </div>
   )
 }

@@ -61,14 +61,14 @@ export default function Textbox(props) {
   return (
     <>
     <div class="container">
-        <h1>{props.heading}</h1>
+        <h1 style={{fontSize:'25pt'}}>{props.heading}</h1>
         <div className="mb-3">
-        <textarea className="form-control" id="textbox" rows="8" value={text} onChange={handleronchnage} style={{backgroundColor:props.Mode==='dark'?'grey':'white',color:props.mode==='dark'?'white':'black'}}></textarea>
+        <textarea className="form-control" id="textbox" rows="8" value={text} onChange={handleronchnage} style={{backgroundColor:props.Mode ==='dark'?'white':'grey',color:props.Mode==='dark'?'black':'white'}}></textarea>
         <button className="btn btn-outline-primary" onClick={handleupclick}>Convert into UpperCase</button>
-        <button className="btn btn-outline-primary mx-1 my-2" onClick={handleLoclick}>Convert into LowerCase</button>
-        <button className="btn btn-outline-primary mx-1 my-2" onClick={handleclclick}>Clear Text</button>
-        <button className="btn btn-outline-primary mx-1 my-2" onClick={handlecopy}>Copy Text</button>
-        <button className="btn btn-outline-primary mx-1 my-2" onClick={handleextraspace}>Remove Extra space</button>
+        <button className="btn btn-outline-primary mx-1 my-1" onClick={handleLoclick}>Convert into LowerCase</button>
+        <button className="btn btn-outline-primary mx-1 my-1" onClick={handleclclick}>Clear Text</button>
+        <button className="btn btn-outline-primary mx-1 my-1" onClick={handlecopy}>Copy Text</button>
+        <button className="btn btn-outline-primary mx-1 my-1" onClick={handleextraspace}>Remove Extra space</button>
         {/* <button className="btn btn-outline-primary mx-1 my-2" onClick={handlecapitalizeclick}>Capitalize the Text</button> */}
         </div>
     </div>
@@ -79,7 +79,7 @@ export default function Textbox(props) {
       <p>{countwords(text)} <b>Words</b> {text.length} <b>Letters</b></p>
       <p>{0.008*text.split(" ").length} <b>Minuts to Read</b></p>
       <h2>Preview</h2>
-      <p>{text.length > 1 ? text : " Enter Text First In Text-Area For Previewing " } </p>
+      <p>{text.length > 1 ? text : " Nothing to Preview " } </p>
     </div>
     </>
   )
