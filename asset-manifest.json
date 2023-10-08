@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Formator2/static/css/main.1eeb9641.css",
-    "main.js": "/Formator2/static/js/main.8f80b005.js",
-    "static/js/787.371d3cec.chunk.js": "/Formator2/static/js/787.371d3cec.chunk.js",
-    "static/media/logo.svg": "/Formator2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/Formator2/index.html",
-    "main.1eeb9641.css.map": "/Formator2/static/css/main.1eeb9641.css.map",
-    "main.8f80b005.js.map": "/Formator2/static/js/main.8f80b005.js.map",
-    "787.371d3cec.chunk.js.map": "/Formator2/static/js/787.371d3cec.chunk.js.map"
+    "main.css": "/Formator1/static/css/main.1eeb9641.css",
+    "main.js": "/Formator1/static/js/main.52a09948.js",
+    "static/js/787.371d3cec.chunk.js": "/Formator1/static/js/787.371d3cec.chunk.js",
+    "static/media/logo.svg": "/Formator1/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Formator1/index.html",
+    "main.1eeb9641.css.map": "/Formator1/static/css/main.1eeb9641.css.map",
+    "main.52a09948.js.map": "/Formator1/static/js/main.52a09948.js.map",
+    "787.371d3cec.chunk.js.map": "/Formator1/static/js/787.371d3cec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1eeb9641.css",
-    "static/js/main.8f80b005.js"
+    "static/js/main.52a09948.js"
   ]
 }
